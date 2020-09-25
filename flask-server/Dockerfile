@@ -13,4 +13,4 @@ COPY flaskapp /app/
 RUN pip3 install -r requirements.txt
 WORKDIR /app/
 
-CMD ["gunicorn3", "-b", "0.0.0.0:5000", "app:app", "--workers=5"]
+CMD ["gunicorn3", "-b", "0.0.0.0:5001", "app:app", "--workers=5"]
